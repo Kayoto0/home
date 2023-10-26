@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD3E2; /* Light pink background color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: transparent; /* Transparent white background color */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.password-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FF1493; /* Pink text color */
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 8.5px;
+    margin: 5px 0;
+    border: 2px solid #FF1493; /* Pink border color */
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #FF69B4; /* Lighter pink border color on focus */
+}
+
+button {
+    background-color: rgba(255, 20, 147, 0.7); /* Transparent pink background color */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 5px; /* Shift the button 5 pixels to the right */
+}
+
+button:hover {
+    background-color: rgba(255, 20, 147, 0.9); /* Semi-transparent pink button background color on hover */
+    transform: scale(1.05);
+}

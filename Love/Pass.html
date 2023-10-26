@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-2.css">
+    <title>Password Protected Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="password-form">
+            <h1>Enter Password</h1>
+            <form id="password-form">
+                <input type="password" id="password" name="password" placeholder="Password" required onkeyup="checkEnter(event)">
+                <button type="button" onclick="checkPassword()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById("password").value;
+            if (enteredPassword === "iwishicouldkissmyman") {
+                window.location.href = "index.html"; // Redirect to the protected page
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                checkPassword();
+            }
+        }
+    </script>
+</body>
+</html>
