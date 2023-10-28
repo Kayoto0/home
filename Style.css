@@ -262,6 +262,22 @@ h2
         text-shadow: 0 0 10px rgba(255, 170, 170, 0.781), 0 0 20px rgba(255, 149, 172, 0.562), 0 0 30px rgb(255, 169, 197)
      
 }
+.top-text2
+{
+    position: relative;
+    top: 0;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 20px;
+    color: #afa7ff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 170, 170, 0.781), 0 0 20px rgba(255, 149, 172, 0.562), 0 0 30px rgb(255, 169, 197)
+ 
+}
 .navigation 
 {
     width: 60px;
@@ -395,4 +411,59 @@ h2
     opacity: 1;
     transition: transform 0.5s, opacity 0.5s;
 }
+.highlight-word {
+    color: #c368ff; /* Change this to the desired color */
+    text-decoration-style: dotted;
+}
+.top-text1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px; /* Adds space below the top text */
+}
 
+.highlight-text1 {
+    position: fixed;
+    top: 30px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 20px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text2 {
+    position: fixed;
+    top: 60px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 20px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+.highlight-text3 {
+    position: fixed;
+    top: 90px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 20px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
