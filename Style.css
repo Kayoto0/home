@@ -485,4 +485,107 @@ h2
     text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
 
 }
+.highlight-text5 {
+    position: fixed;
+    top: 120px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text6 {
+    position: fixed;
+    top: 140px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text7 {
+    position: fixed;
+    top: 160px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text8 {
+    position: fixed;
+    top: 180px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text9 {
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text10 {
+    position: fixed;
+    top: 220px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+
 
