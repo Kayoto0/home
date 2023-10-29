@@ -414,14 +414,15 @@ h2
 .top-text1 {
     font-size: 24px;
     left: 50px;
+    text-decoration: underline;
     text-align: left;
-    margin-bottom: 10px; /* Adds space below the top text */
+    margin-bottom: 50px; /* Adds space below the top text */
     margin-right: 10px; /* Adds space below the top text */
 }
 
 .highlight-text1 {
     position: fixed;
-    top: 30px;
+    top: 40px;
     left: 50px;
     width: auto;
     text-align: left;
@@ -429,7 +430,7 @@ h2
     padding: 0; /* Set padding to 0 */
     margin: 0; /* Set margin to 0 */
     color: gradient;
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
     display: '';
     text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
@@ -446,7 +447,7 @@ h2
     padding: 0; /* Set padding to 0 */
     margin: 0; /* Set margin to 0 */
     color: gradient;
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
     display: '';
     text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
@@ -454,7 +455,7 @@ h2
 }
 .highlight-text3 {
     position: fixed;
-    top: 90px;
+    top: 80px;
     left: 50px;
     width: auto;
     text-align: center;
@@ -462,9 +463,26 @@ h2
     padding: 0; /* Set padding to 0 */
     margin: 0; /* Set margin to 0 */
     color: gradient;
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
     display: '';
     text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
 
 }
+.highlight-text4 {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
