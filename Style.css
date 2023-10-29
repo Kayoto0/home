@@ -23,6 +23,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     min-height: 100vh;
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(24, 15, 17) 35%, rgb(37, 10, 35)100%);
 }
