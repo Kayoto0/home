@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&family=Tangerine&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Sometype+Mono&family=Tangerine&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Macondo&family=Macondo+Swash+Caps&family=Nothing+You+Could+Do&family=Nunito:wght@800&family=Sometype+Mono&family=Tangerine&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sometype Mono', monospace;
+}
+    :root
+{
+    --clr: #301c26;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(24, 15, 17) 35%, rgb(37, 10, 35)100%);
+}
+#time
+{
+    display: flex;
+    gap: 30px;
+}
+#time .circle
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+#time .circle svg circle 
+{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #301c26;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+#time .circle svg circle:nth-child(2)
+{
+    stroke:var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+#time div
+{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5em;
+}
+#time div span
+{
+    position: absolute;
+    transform: translateX(-50%) translateY(-10px);
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+#time .dots
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+}
+#time .dots::before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
+}
+.HappyAnniversary
+{
+    font-size: 8em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 0.6em;
+    display: none;
+
+}
+.HappyAnniversary span
+{
+    font-size: 0.5em;
+    font-weight: 300;
+}
+.fade-in {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+.wrapper
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(34, 16, 49) 0%, rgb(34, 21, 34) 35%, rgb(218, 218, 218)100%);
+}
+h2
+{
+    font-family: poppins;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+}
+.box div {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+  }
+  
+  .box div::before, .box div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: rgb(255, 202, 235);
+  }
+  
+ .box div::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .box div::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+.box div:nth-child(1)
+{
+    top: 12%;
+    left: 42%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(2)
+{
+    top: 72%;
+    left: 50%;
+    animation: animate 19s linear infinite;
+}
+.box div:nth-child(3)
+{
+    top: 17%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(4)
+{
+    top: 15%;
+    left: 44%;
+    animation: animate 3s linear infinite;
+}
+.box div:nth-child(5)
+{
+    top: 54%;
+    left: 5%;
+    animation: animate 13s linear infinite;
+}
+.box div:nth-child(6)
+{
+    top: 65%;
+    left: 9%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(7)
+{
+    top: 22%;
+    left: 42%;
+    animation: animate 14s linear infinite;
+}
+.box div:nth-child(8)
+{
+    top: 43%;
+    left: 66%;
+    animation: animate 18s linear infinite;
+}
+.box div:nth-child(9)
+{
+    top: 98%;
+    left: 11%;
+    animation: animate 2s linear infinite;
+}
+.box div:nth-child(10)
+{
+    top: 5%;
+    left: 53%;
+    animation: animate 12s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.bottom-text
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: transparent; /* Background color for better visibility */
+  padding: 10px 0;
+  font-family: 'Nothing You Could Do', cursive;
+  color: #ffffff;
+  font-size: 20px;
+}
+  .bottom-text2
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 10px;
+
+}
+    .top-text1
+    {
+        position: fixed;
+        top: 0;
+        width: auto;
+        text-align: center;
+        background-color: transparent;
+        padding: 0; /* Set padding to 0 */
+        margin: 0; /* Set margin to 0 */
+        color: gradient;
+        font-size: 20px;
+        color: #ffc9de;
+        display: '';
+        text-shadow: 0 0 10px rgba(255, 170, 170, 0.781), 0 0 20px rgba(255, 149, 172, 0.562), 0 0 30px rgb(255, 169, 197)
+     
+}
+.top-text2
+{
+    position: relative;
+    top: 0;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 20px;
+    color: #afa7ff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 170, 170, 0.781), 0 0 20px rgba(255, 149, 172, 0.562), 0 0 30px rgb(255, 169, 197)
+ 
+}
+.navigation 
+{
+    width: 60px;
+    height: 400px;
+    background: #301c26;
+    position: absolute;
+    right: 20px; /* Add a margin from the right side */
+    top: 50%; /* Vertically align to the center */
+    transform: translateY(-50%); /* Correct for vertical alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+  
+  /* ... Rest of your CSS remains the same ... */
+
+.navigation ul {
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  height: 350px; /* Changed height to 350px */
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  height: 70px; /* Changed height to 70px */
+  width: 60px; /* Changed width to 60px */
+  z-index: 2;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: #fff;
+  transform: translateX(3px); /* Shift right by 3 pixels */
+}
+
+.navigation ul li.active a .icon {
+  transform: translateX(-29px); /* Shift right by 3 pixels */
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(18px); /* Shift right by 3 pixels */
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.indicator {
+    position: absolute;
+    left: -32px;
+    height: 70px;
+    width: 70px;
+    background: #301c26;
+    border-radius: 50%;
+    border: 6px solid var(--clr2);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.navigation ul li:nth-child(1) a .icon {
+    transform: translateX(0px); /* Move it to the left */
+    transition: transform 0.5s;
+  }
+  
+  .navigation ul li:nth-child(1):hover a .icon {
+    transform: translateX(70px *0); /* Move it back to its initial position */
+  }
+  .navigation ul li:nth-child(1) a .text {
+  opacity: 0; /* Initially set the opacity to 0 */
+  transform: translateX(18px); /* Initially offset the text */
+}
+
+.navigation ul li:nth-child(1):hover a .text {
+  opacity: 1; /* Set the opacity to 1 when hovered */
+  transform: translateX(4px);
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator,
+.navigation ul li:nth-child(2):hover ~ .indicator {
+    transform: translateY(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator,
+.navigation ul li:nth-child(3):hover ~ .indicator {
+    transform: translateY(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator,
+.navigation ul li:nth-child(4):hover ~ .indicator {
+    transform: translateY(calc(70px * 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator,
+.navigation ul li:nth-child(5):hover ~ .indicator {
+    transform: translateY(calc(70px * 4));
+}
+
+.navigation ul li a:hover .icon {
+    transform: translateX(-29px);
+    transition: transform 0.5s;
+}
+
+.navigation ul li a:hover .text {
+    transform: translateX(1px);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.top-text1 {
+    font-size: 24px;
+    left: 50px;
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: 50px; /* Adds space below the top text */
+    margin-right: 10px; /* Adds space below the top text */
+}
+
+.highlight-text1 {
+    position: fixed;
+    top: 40px;
+    left: 50px;
+    width: auto;
+    text-align: left;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text2 {
+    position: fixed;
+    top: 60px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+.highlight-text3 {
+    position: fixed;
+    top: 80px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+.highlight-text4 {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+.highlight-text5 {
+    position: fixed;
+    top: 120px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text6 {
+    position: fixed;
+    top: 140px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text7 {
+    position: fixed;
+    top: 160px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text8 {
+    position: fixed;
+    top: 180px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text9 {
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+
+.highlight-text10 {
+    position: fixed;
+    top: 220px;
+    left: 50px;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 */
+    color: gradient;
+    font-size: 15px;
+    color: #ffffff;
+    display: '';
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.781), 0 0 20px rgba(255, 255, 255, 0.562), 0 0 30px rgb(255, 165, 169)
+
+}
+canvas {
+    position: fixed; /* Change to fixed position */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Position at the left of the viewport */
+    z-index: 9999; /* Set a high z-index value to ensure it appears above other elements */
+    overflow: hidden; /* Hide overflow */
+    pointer-events: none; /* Ensure it doesn't interfere with pointer events */
+  }
+  
