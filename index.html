@@ -4,10 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title> To My Love Ti-ikha</title>
-
-        <link rel="stylesheet" href="Style.css">
-        <script src="script.js" defer></script>
-
+        <link rel="stylesheet" href="style3.css">
     </head>
     <body>
         <div id="time">
@@ -19,7 +16,8 @@
             </svg>
             <div id="days">00<br><span>Days</span></div>
             </div> 
-            
+            <div class=" fade-in">
+        </div>
             <div class="circle" style="--clr:#ff4986;">
                 <div class= "dots hr_dot"></div>
                 <svg>
@@ -48,7 +46,7 @@
             </div>
          </div>
 
-         <h2 class="HappyAnniversary"> <br><span>HAPPY BIRTHDAY MI AMOR</span></h2>
+         <h2 class="HappyAnniversary"><br><span>Happy Birthday Mi Amor</span></h2>
          <script>
             let days = document.getElementById('days');
             let hours = document.getElementById('hours');
@@ -113,6 +111,7 @@
                     'none' 
                     document.querySelector(".HappyAnniversary").style.display = 
                     'block' 
+                    anniversaryText.classList.add('fade-in');
                 }
             })  
          </script>
@@ -141,8 +140,8 @@
                   </body>
                   <body>
                     <div class="top-text1">NO NEW UPDATES </div>
-                    <div class="highlight-text1">BIRTHDAY GIFT SOON : FUN </div>
-                    <div class="highlight-text2">VALENTINES GIFT SOON : FUN </div>
+                    <div class="highlight-text1"></div>
+                    <div class="highlight-text2"></div>
                     <div class="highlight-text3"></div>
                 </body>
                   <div class="navigation">
@@ -191,6 +190,8 @@
                     </ul>
                   </div>
                 </script>
+                <canvas id="canvas"></canvas>
+                <script src="script.js" defer></script>
             </head>
             <body>
                 <!-- Call the showNotification() function when the page loads -->
