@@ -1,78 +1,217 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Product Card with Fly Cart Animation | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="cart-nav">
-        <div class="icon">
-          <i class="fas fa-shopping-cart"></i>
-          <span>Cart</span>
-        </div>
-        <div class="item-count">0</div>
-      </div>
-      <div class="card">
-        <img src="images/beads.png" alt="">
-        <div class="content">
-          <div class="row">
-            <div class="details">
-              <span>Golden Beads</span>
-              <p>Band Crafted Beads</p>
-            </div>
-            <div class="price">$50</div>
-          </div>
-          <div class="buttons">
-            <button>Buy Now</button>
-            <button class="cart-btn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/handbeads.png" alt="">
-        <div class="content">
-          <div class="row">
-            <div class="details">
-              <span>Wooden Beads</span>
-              <p>Hand Crafted Beads</p>
-            </div>
-            <div class="price">$30</div>
-          </div>
-          <div class="buttons">
-            <button>Buy Now</button>
-            <button class="cart-btn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/rings.png" alt="">
-        <div class="content">
-          <div class="row">
-            <div class="details">
-              <span>Rings</span>
-              <p>Golden Rings</p>
-            </div>
-            <div class="price">$40</div>
-          </div>
-          <div class="buttons">
-            <button>Buy Now</button>
-            <button class="cart-btn">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-text">HeirBloom 2023-2024</div>
-    <script src="script.js"></script>
-  </body>
-  </html>
-    </div>
+<html lang="en">
 
-    <script src="script.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title> To My Love Ti-ikha</title>
 
-  </body>
-</html>
+        <link rel="stylesheet" href="Style.css">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        <div id="time">
+            <div class="circle" style="--clr:#ffffff;">
+              <div class= "dots day_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="dd"></circle>
+            </svg>
+            <div id="days">00<br><span>Days</span></div>
+            </div> 
+            <div class=" fade-in">
+        </div>
+            <div class="circle" style="--clr:#ff4986;">
+                <div class= "dots hr_dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="hh"></circle>
+              </svg>
+              <div id="hours">00</div>
+              </div>
+             
+            <div class="circle" style="--clr:#ff0357;">
+                <div class= "dots min_dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="mm"></circle>
+              </svg>
+              <div id="minutes">00</div>
+              </div>
+             
+            <div class="circle" style="--clr:#ff0325;">
+                <div class= "dots sec_dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="ss"></circle>
+              </svg>
+              <div id="seconds">00</div>
+            </div>
+         </div>
+
+         <h2 class="HappyAnniversary"><br><span>Happy Anniversary Princess</span></h2>
+         <script>
+            let days = document.getElementById('days');
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let seconds = document.getElementById('seconds');
+
+            let dd = document.getElementById('dd');
+            let hh = document.getElementById('hh');
+            let mm = document.getElementById('mm');
+            let ss = document.getElementById('ss');
+
+            let day_dot = document.querySelector('.day_dot');
+            let hr_dot = document.querySelector('.hr_dot');
+            let min_dot = document.querySelector('.min_dot');
+            let sec_dot = document.querySelector('.sec_dot');
+
+            let endDate = '06/22/2024 00:00:00';
+            //date format mm/dd/yyyy
+
+            let x = setInterval(function(){
+                let now = new Date(endDate).getTime();
+                let countDown = new Date().getTime();
+                let distance = now - countDown;
+
+                // time calculation for days, hours mnutes and seconds
+                let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60 ));
+                let m = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60 ));
+                let s = Math.floor((distance % (1000 * 60 )) / (1000));
+
+                //output the result in elemt with id
+                days.innerHTML = d + "<br><span>Days<span>";
+                hours.innerHTML = h + "<br><span>Hours<span>";
+                minutes.innerHTML = m + "<br><span>Minutes<span>";
+                seconds.innerHTML = s + "<br><span>Seconds<span>";
+
+                // animate stroke
+                dd.style.strokeDashoffset= 440 - (440 * d) / 365;
+                //365 days in a year
+                hh.style.strokeDashoffset= 440 - (440 * h) / 24;
+                //24 hours in a day
+                mm.style.strokeDashoffset= 440 - (440 * m) / 60;
+                //60 minutes in an hour
+                ss.style.strokeDashoffset= 440 - (440 * s) / 60;
+                //60 seconds in a minute
+
+                // Animate circle dots
+               day_dot.style.transform = `rotateZ(${d * 0.986}deg)`;
+
+               hr_dot.style.transform = `rotateZ(${h * 15}deg)`;
+
+               min_dot.style.transform = `rotateZ(${m * 6}deg)`;
+
+               sec_dot.style.transform = `rotateZ(${s * 6}deg)`;
+               
+
+
+                // if the countdown is over write some text
+                if(distance < 0){
+                    clearInterval(x);
+                    document.getElementById("time").style.display = 
+                    'none' 
+                    document.querySelector(".HappyAnniversary").style.display = 
+                    'block' 
+                    anniversaryText.classList.add('fade-in');
+                }
+            })  
+         </script>
+         <body>
+            <div class "wrapper">
+                <h2>Animated Background</h2>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                  </style>
+                  </head>
+                  <body>
+                    <div class="bottom-text">Their is no patience to our love -J.G</div>
+                  </body>
+                  <body>
+                    <div class="bottom-text2">Made by Jason G ver 0.5</div>
+                  </body>
+                  <body>
+                    <div class="top-text1">NO NEW UPDATES </div>
+                    <div class="highlight-text1"></div>
+                    <div class="highlight-text2"></div>
+                    <div class="highlight-text3"></div>
+                </body>
+                  <div class="navigation">
+                    <ul>
+                      <li class="list active">
+                        <a href="" target="blank">
+                          <span class="icon">
+                            <ion-icon name="home"></ion-icon>
+                          </span>
+                          <span class="text">Home</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="https://kayoto0.github.io/pass/" target="blank">
+                          <span class="icon">
+                            <ion-icon name="heart"></ion-icon>
+                          </span>
+                          <span class="text">Love</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="https://kayoto0.github.io/chat/" target="blank">
+                          <span class="icon">
+                            <ion-icon name="chatbubble"></ion-icon>
+                          </span>
+                          <span class="text">Chat</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="https://kayoto0.github.io/listpass/" target="blank">
+                          <span class="icon">
+                            <ion-icon name="list-circle"></ion-icon>
+                          </span>
+                          <span class="text">To Do List</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="https://kayoto0.github.io/funmenu/" target="blank">
+                          <span class="icon">
+                            <ion-icon name="game-controller"></ion-icon>
+                          </span>
+                          <span class="text">Fun</span>
+                        </a>
+                      </li>
+                      <div class="indicator"></div>
+                    </ul>
+                  </div>
+                </script>
+            </head>
+            <body>
+                <!-- Call the showNotification() function when the page loads -->
+                <script>
+                    window.addEventListener("load", showNotification);
+                </script>
+
+
+                  
+
+
+                  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">;
+                    </script>
+                  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">;
+
+                  
+                    </script>
+                  </script>
+                </body>
+                </html
+    
+                  
