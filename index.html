@@ -66,7 +66,35 @@
             let min_dot = document.querySelector('.min_dot');
             let sec_dot = document.querySelector('.sec_dot');
 
-            let endDate = '01/22/2025 00:00:00';
+             
+    function getNextTargetDate() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = today.getMonth(); // 0-indexed (Jan = 0)
+        
+            let targetMonth = month;
+            let targetYear = year;
+        
+            const day = today.getDate();
+        
+            if (day >= 22) {
+                // Go to the 22nd of next month
+                targetMonth += 1;
+                if (targetMonth > 11) {
+                    targetMonth = 0;
+                    targetYear += 1;
+                }
+            }
+
+    // Format the date as mm/dd/yyyy
+    const formattedMonth = String(targetMonth + 1).padStart(2, '0');
+    const targetDate = `${formattedMonth}/22/${targetYear} 00:00:00`;
+
+    return targetDate;
+}
+
+let endDate = getNextTargetDate();
+
             //date format mm/dd/yyyy
 
             let x = setInterval(function(){
